@@ -6,6 +6,7 @@ import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { useState } from "react";
+import { HamburgerMenu } from "./design/Header";
 
 const Header = () => {
   const pathname = useLocation();
@@ -63,7 +64,7 @@ const Header = () => {
             ))}
           </div>
 
-          {/* <HamburgerMenu /> */}
+          <HamburgerMenu />
         </nav>
 
         <a
